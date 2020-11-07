@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/layout}"
+      th:with="title='Home'">
+
+<div layout:fragment="content">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                "order": [
+                    [ 3, 'desc' ]
+                ]
+            });
+        } );
+    </script>
+
+    <table id="example" class="display" style="width:100%">
+
+        <thead>
+        <tr>
+            <th scope="col">UUID</th>
+            <th scope="col">Accessibility Event</th>
+            <th scope="col">Message</th>
+            <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr th:each="keyLog: ${keyLogList}">
+            <td th:text="${keyLog.uuid}"/>
+            <td th:text="${keyLog.accessibilityEvent}"/>
+            <td th:text="${keyLog.msg}"/>
+            <td th:text="${keyLog.keyLogDate}"/>
+        </tr>
+
+        </tbody>
+    </table>
+
+</div>
+
+</html>

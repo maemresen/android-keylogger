@@ -1,0 +1,21 @@
+server:
+
+  # configures the port that Eureka Server will be running
+  port: 8080
+
+
+spring:
+
+  # DataSource Configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/keylog_db
+    username: postgres
+    password: pos
+
+  # JPA Configurations
+  jpa:
+    #hibernate.ddl-auto: create
+    properties:
+      hibernate.show_sql: false
+      hibernate.format_sql: true
+      hibernate.jdbc.lob.non_contextual_creation: true

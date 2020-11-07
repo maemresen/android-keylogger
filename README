@@ -1,0 +1,3 @@
+keylogapp => Basic Mobile Application that logs keys
+keylogweb => Web Application that receives logged keys
+smart-keylogger-androis => Dummy Android project to send sensor data (not sub module of project)
