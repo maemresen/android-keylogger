@@ -9,8 +9,6 @@ This is a project implemented as Project for the Information Systems Security Co
 ## How It Works
 [Keylogger.png](./diagrams/Keylogger.png)
 
-**Notes:**
-
 ## Usage
 1. Deploy **keylogweb** application
     * NOTE: your andorid phone must have access to the server that web application running via network or internet etc.
