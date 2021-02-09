@@ -7,7 +7,7 @@ This is a project implemented as Project for the Information Systems Security Co
 * keylogweb => Spring Boot Web Application that receives logged keys
 
 ## How It Works
-![Keylogger.png](./diagrams/Keylogger.png)
+[Keylogger.png](./diagrams/Keylogger.png)
 
 **Notes:**
 
