@@ -1,0 +1,21 @@
+@startuml
+title Keylogger
+
+actor user as "Standard User"
+participant "keylogapp" as mobile
+participant "keylogweb" as web
+database "Database" as db
+
+user -> mobile: Install App
+activate mobile
+user -> mobile: Enable **Evil Service**
+mobile -> mobile: **Listening Accessibility Events** \n TYPE_VIEW_TEXT_CHANGED \n TYPE_VIEW_FOCUSED \n TYPE_VIEW_CLICKED
+mobile -> mobile: Catch event
+
+activate web
+mobile -> web: Post Catched Event
+web -> db: Save Catched Event
+
+deactivate web
+deactivate mobile
+@enduml
