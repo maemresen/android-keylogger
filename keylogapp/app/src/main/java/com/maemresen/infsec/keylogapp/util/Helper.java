@@ -1,4 +1,4 @@
-package com.maemresen.infsec.keylogapp;
+package com.maemresen.infsec.keylogapp.util;
 
 import java.util.UUID;
 

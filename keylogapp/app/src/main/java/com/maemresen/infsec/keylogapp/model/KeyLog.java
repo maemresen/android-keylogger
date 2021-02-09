@@ -1,8 +1,5 @@
 package com.maemresen.infsec.keylogapp.model;
 
-import com.maemresen.infsec.keylogapp.Helper;
-import com.maemresen.infsec.keylogapp.util.DateTimeHelper;
-
 import java.util.Date;
 
 /**
