@@ -1,8 +1,6 @@
 # Android Keylogger
-keylogapp => Basic Mobile Application that logs keys
-keylogweb => Web Application that receives logged keys
-smart-keylogger-androis => Dummy Android project to send sensor data (not sub module of project)
-
+* keylogapp => Basic Mobile Application that logs keys
+* keylogweb => Web Application that receives logged keys
 
 ## How To Work
 This is a project implemented as Project for the Information Systems Security Course. The main idea is developing a basic key logger for android mobile devices.
