@@ -8,9 +8,10 @@ spring:
 
   # DataSource Configuration
   datasource:
-    url: jdbc:postgresql://localhost:5432/keylog_db
-    username: postgres
-    password: pos
+    url: jdbc:h2:~/test
+    username: sa
+    password:
+    initialization-mode: always
 
   # JPA Configurations
   jpa:
@@ -19,3 +20,5 @@ spring:
       hibernate.show_sql: false
       hibernate.format_sql: true
       hibernate.jdbc.lob.non_contextual_creation: true
+    hibernate:
+      ddl-auto: create
