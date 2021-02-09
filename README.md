@@ -5,6 +5,11 @@
 ## How To Work
 This is a project implemented as Project for the Information Systems Security Course. The main idea is developing a basic key logger for android mobile devices.
 
+## How It Works
+![Keylogger.png](./diagrams/Keylogger.png)
+
+
+
 ## Usage
 1. First you need to build and install **keylogapp** to your Android phone
 2. Second, you should run **keylogweb** application
